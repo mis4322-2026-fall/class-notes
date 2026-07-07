@@ -1,0 +1,6 @@
+order_id,customer_id,region,status,units,price
+3001,501,North,Closed,5,220.0
+3002,502,West,Closed,3,180.0
+3003,501,North,Pending,4,210.0
+3004,503,South,Closed,2,260.0
+3005,504,West,Closed,6,170.0

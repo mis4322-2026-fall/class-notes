@@ -1,0 +1,32 @@
+[
+  {
+    "transaction_id": "T001",
+    "timestamp": "2024-01-15T10:30:00",
+    "customer": {
+      "id": 101,
+      "name": "Alice"
+    },
+    "amount": 250.75,
+    "status": "completed"
+  },
+  {
+    "transaction_id": "T002",
+    "timestamp": "2024-01-15T11:00:00",
+    "customer": {
+      "id": 102,
+      "name": "Bob"
+    },
+    "amount": 50.00,
+    "status": "completed"
+  },
+  {
+    "transaction_id": "T003",
+    "timestamp": "2024-01-15T11:30:00",
+    "customer": {
+      "id": 103,
+      "name": "Carol"
+    },
+    "amount": 500.00,
+    "status": "completed"
+  }
+]

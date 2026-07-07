@@ -1,0 +1,8 @@
+month,category,amount,approved
+Jan,Travel,1200.00,yes
+Jan,Software,450.00,yes
+Feb,Travel,980.50,no
+Feb,Training,300.00,yes
+Mar,Software,500.00,yes
+Mar,Travel,1100.00,yes
+Apr,Training,250.00,yes

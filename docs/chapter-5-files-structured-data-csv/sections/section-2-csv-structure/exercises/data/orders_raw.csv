@@ -1,0 +1,8 @@
+order_id,customer,department,quantity,unit_price
+1001,Acme,IT,3,249.99
+1002,Beta,Finance,2,199.50
+1003,,Operations,5,89.00
+1004,Delta,IT,,300.00
+1005,Echo,HR,4,75.25
+1006,Foxtrot,Finance,1,invalid
+1007,Gamma,Operations,2,120.00

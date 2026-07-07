@@ -1,0 +1,9 @@
+request_id,team,priority,status,resolution_hours,opened_date
+R-100,Apps,high,closed,5.5,2026-03-01
+R-101,Infra,medium,closed,12,2026-03-01
+R-102,Apps,low,open,0,2026-03-02
+R-103,Data,high,closed,8,2026-03-02
+R-104,Infra,high,closed,4.5,2026-03-03
+R-105,Data,medium,closed,10,2026-03-03
+R-106,Apps,high,closed,6,2026-03-04
+R-107,Data,low,closed,14,2026-03-04

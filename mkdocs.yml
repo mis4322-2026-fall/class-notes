@@ -1,0 +1,183 @@
+site_name: Advanced Python for MIS
+site_description: Course textbook and exercises for an Advanced Python curriculum for MIS students.
+site_url: ""
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - toc:
+      permalink: true
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Chapter 1:
+      - Learning Outcomes: chapter-1-python-execution-environment-management/learning-outcomes.md
+      - Concepts: chapter-1-python-execution-environment-management/concepts.md
+      - Section 1 Notes: chapter-1-python-execution-environment-management/sections/section-1-python-runtime-model/notes.md
+      - Section 1 Exercise: chapter-1-python-execution-environment-management/sections/section-1-python-runtime-model/exercises/exercise-1.md
+      - Section 2 Notes: chapter-1-python-execution-environment-management/sections/section-2-python-interpreter-in-practice/notes.md
+      - Section 2 Exercise: chapter-1-python-execution-environment-management/sections/section-2-python-interpreter-in-practice/exercises/exercise-1.md
+      - Section 3 Notes: chapter-1-python-execution-environment-management/sections/section-3-virtual-environments-venv/notes.md
+      - Section 3 Exercise: chapter-1-python-execution-environment-management/sections/section-3-virtual-environments-venv/exercises/exercise-1.md
+      - Section 4 Notes: chapter-1-python-execution-environment-management/sections/section-4-package-management-pip/notes.md
+      - Section 4 Exercise: chapter-1-python-execution-environment-management/sections/section-4-package-management-pip/exercises/exercise-1.md
+  - Chapter 2:
+      - Learning Outcomes: chapter-2-version-control-with-git/learning-outcomes.md
+      - Concepts: chapter-2-version-control-with-git/concepts.md
+      - Section 1 Notes: chapter-2-version-control-with-git/sections/section-1-why-version-control-matters/notes.md
+      - Section 1 Exercise: chapter-2-version-control-with-git/sections/section-1-why-version-control-matters/exercises/exercise-1.md
+      - Section 2 Notes: chapter-2-version-control-with-git/sections/section-2-repository-lifecycle/notes.md
+      - Section 2 Exercise: chapter-2-version-control-with-git/sections/section-2-repository-lifecycle/exercises/exercise-1.md
+      - Section 3 Notes: chapter-2-version-control-with-git/sections/section-3-core-git-workflow/notes.md
+      - Section 3 Exercise: chapter-2-version-control-with-git/sections/section-3-core-git-workflow/exercises/exercise-1.md
+      - Section 4 Notes: chapter-2-version-control-with-git/sections/section-4-git-in-python-projects/notes.md
+      - Section 4 Exercise: chapter-2-version-control-with-git/sections/section-4-git-in-python-projects/exercises/exercise-1.md
+  - Chapter 3:
+      - Learning Outcomes: chapter-3-core-data-structures-in-memory-modeling/learning-outcomes.md
+      - Concepts: chapter-3-core-data-structures-in-memory-modeling/concepts.md
+      - Section 1 Notes: chapter-3-core-data-structures-in-memory-modeling/sections/section-1-lists-as-ordered-data/notes.md
+      - Section 1 Exercise 1: chapter-3-core-data-structures-in-memory-modeling/sections/section-1-lists-as-ordered-data/exercises/exercise-1.py
+      - Section 1 Exercise 2: chapter-3-core-data-structures-in-memory-modeling/sections/section-1-lists-as-ordered-data/exercises/exercise-2.py
+      - Section 2 Notes: chapter-3-core-data-structures-in-memory-modeling/sections/section-2-loops-and-list-comprehensions/notes.md
+      - Section 2 Exercise 1: chapter-3-core-data-structures-in-memory-modeling/sections/section-2-loops-and-list-comprehensions/exercises/exercise-1.py
+      - Section 2 Exercise 2: chapter-3-core-data-structures-in-memory-modeling/sections/section-2-loops-and-list-comprehensions/exercises/exercise-2.py
+      - Section 3 Notes: chapter-3-core-data-structures-in-memory-modeling/sections/section-3-dictionaries-as-structured-data/notes.md
+      - Section 3 Exercise 1: chapter-3-core-data-structures-in-memory-modeling/sections/section-3-dictionaries-as-structured-data/exercises/exercise-1.py
+      - Section 3 Exercise 2: chapter-3-core-data-structures-in-memory-modeling/sections/section-3-dictionaries-as-structured-data/exercises/exercise-2.py
+      - Section 4 Notes: chapter-3-core-data-structures-in-memory-modeling/sections/section-4-dictionary-apis-and-nested-structures/notes.md
+      - Section 4 Exercise 1: chapter-3-core-data-structures-in-memory-modeling/sections/section-4-dictionary-apis-and-nested-structures/exercises/exercise-1.py
+      - Section 4 Exercise 2: chapter-3-core-data-structures-in-memory-modeling/sections/section-4-dictionary-apis-and-nested-structures/exercises/exercise-2.py
+  - Chapter 4:
+      - Learning Outcomes: chapter-4-functions-and-lambda-expressions-for-data-processing/learning-outcomes.md
+      - Concepts: chapter-4-functions-and-lambda-expressions-for-data-processing/concepts.md
+      - Section 1 Notes: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-1-function-fundamentals-for-data-work/notes.md
+      - Section 1 Exercise 1: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-1-function-fundamentals-for-data-work/exercises/exercise-1.py
+      - Section 1 Exercise 2: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-1-function-fundamentals-for-data-work/exercises/exercise-2.py
+      - Section 2 Notes: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-2-function-design-for-lists-and-dictionaries/notes.md
+      - Section 2 Exercise 1: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-2-function-design-for-lists-and-dictionaries/exercises/exercise-1.py
+      - Section 2 Exercise 2: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-2-function-design-for-lists-and-dictionaries/exercises/exercise-2.py
+      - Section 3 Notes: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-3-lambda-expressions/notes.md
+      - Section 3 Exercise 1: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-3-lambda-expressions/exercises/exercise-1.py
+      - Section 3 Exercise 2: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-3-lambda-expressions/exercises/exercise-2.py
+      - Section 4 Notes: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-4-applying-functions-and-lambdas-in-data-pipelines/notes.md
+      - Section 4 Exercise 1: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-4-applying-functions-and-lambdas-in-data-pipelines/exercises/exercise-1.py
+      - Section 4 Exercise 2: chapter-4-functions-and-lambda-expressions-for-data-processing/sections/section-4-applying-functions-and-lambdas-in-data-pipelines/exercises/exercise-2.py
+  - Chapter 5:
+      - Learning Outcomes: chapter-5-files-structured-data-csv/learning-outcomes.md
+      - Concepts: chapter-5-files-structured-data-csv/concepts.md
+      - Section 1 Notes: chapter-5-files-structured-data-csv/sections/section-1-file-input-output-basics/notes.md
+      - Section 1 Exercise 1: chapter-5-files-structured-data-csv/sections/section-1-file-input-output-basics/exercises/exercise-1.py
+      - Section 2 Notes: chapter-5-files-structured-data-csv/sections/section-2-csv-structure/notes.md
+      - Section 2 Exercise 1: chapter-5-files-structured-data-csv/sections/section-2-csv-structure/exercises/exercise-1.py
+      - Section 3 Notes: chapter-5-files-structured-data-csv/sections/section-3-working-with-csv-in-python/notes.md
+      - Section 3 Exercise 1: chapter-5-files-structured-data-csv/sections/section-3-working-with-csv-in-python/exercises/exercise-1.py
+      - Section 4 Notes: chapter-5-files-structured-data-csv/sections/section-4-data-transformation-pipeline/notes.md
+      - Section 4 Exercise 1: chapter-5-files-structured-data-csv/sections/section-4-data-transformation-pipeline/exercises/exercise-1.py
+  - Chapter 6:
+      - Learning Outcomes: chapter-6-json-api-consumption/learning-outcomes.md
+      - Concepts: chapter-6-json-api-consumption/concepts.md
+      - Section 1 Notes: chapter-6-json-api-consumption/sections/section-1-json-as-a-data-format/notes.md
+      - Section 1 Exercise 1: chapter-6-json-api-consumption/sections/section-1-json-as-a-data-format/exercises/exercise-1.py
+      - Section 1 Exercise 2: chapter-6-json-api-consumption/sections/section-1-json-as-a-data-format/exercises/exercise-2.py
+      - Section 2 Notes: chapter-6-json-api-consumption/sections/section-2-making-api-requests/notes.md
+      - Section 2 Exercise 1: chapter-6-json-api-consumption/sections/section-2-making-api-requests/exercises/exercise-1.py
+      - Section 2 Exercise 2: chapter-6-json-api-consumption/sections/section-2-making-api-requests/exercises/exercise-2.py
+      - Section 3 Notes: chapter-6-json-api-consumption/sections/section-3-handling-api-responses/notes.md
+      - Section 3 Exercise 1: chapter-6-json-api-consumption/sections/section-3-handling-api-responses/exercises/exercise-1.py
+      - Section 3 Exercise 2: chapter-6-json-api-consumption/sections/section-3-handling-api-responses/exercises/exercise-2.py
+      - Section 4 Notes: chapter-6-json-api-consumption/sections/section-4-transforming-api-data/notes.md
+      - Section 4 Exercise 1: chapter-6-json-api-consumption/sections/section-4-transforming-api-data/exercises/exercise-1.py
+      - Section 4 Exercise 2: chapter-6-json-api-consumption/sections/section-4-transforming-api-data/exercises/exercise-2.py
+  - Chapter 7:
+      - Learning Outcomes: chapter-7-data-processing-with-numpy-pandas/learning-outcomes.md
+      - Learning Objectives: chapter-7-data-processing-with-numpy-pandas/learning-objectives.md
+      - Concepts: chapter-7-data-processing-with-numpy-pandas/concepts.md
+      - Section 1 Notes: chapter-7-data-processing-with-numpy-pandas/sections/section-1-limitations-of-native-python-structures/notes.md
+      - Section 1 Exercise 1: chapter-7-data-processing-with-numpy-pandas/sections/section-1-limitations-of-native-python-structures/exercises/exercise-1.py
+      - Section 2 Notes: chapter-7-data-processing-with-numpy-pandas/sections/section-2-numpy-arrays/notes.md
+      - Section 2 Exercise 1: chapter-7-data-processing-with-numpy-pandas/sections/section-2-numpy-arrays/exercises/exercise-1.py
+      - Section 2 Exercise 2: chapter-7-data-processing-with-numpy-pandas/sections/section-2-numpy-arrays/exercises/exercise-2.py
+      - Section 3 Notes: chapter-7-data-processing-with-numpy-pandas/sections/section-3-pandas-dataframes/notes.md
+      - Section 3 Exercise 1: chapter-7-data-processing-with-numpy-pandas/sections/section-3-pandas-dataframes/exercises/exercise-1.py
+      - Section 3 Exercise 2: chapter-7-data-processing-with-numpy-pandas/sections/section-3-pandas-dataframes/exercises/exercise-2.py
+      - Section 4 Notes: chapter-7-data-processing-with-numpy-pandas/sections/section-4-data-manipulation-in-pandas/notes.md
+      - Section 4 Exercise 1: chapter-7-data-processing-with-numpy-pandas/sections/section-4-data-manipulation-in-pandas/exercises/exercise-1.py
+      - Section 4 Exercise 2: chapter-7-data-processing-with-numpy-pandas/sections/section-4-data-manipulation-in-pandas/exercises/exercise-2.py
+  - Chapter 8:
+      - Learning Outcomes: chapter-8-data-visualization-matplotlib-light/learning-outcomes.md
+      - Learning Objectives: chapter-8-data-visualization-matplotlib-light/learning-objectives.md
+      - Concepts: chapter-8-data-visualization-matplotlib-light/concepts.md
+      - Section 1 Notes: chapter-8-data-visualization-matplotlib-light/sections/section-1-purpose-of-visualization/notes.md
+      - Section 1 Exercise 1: chapter-8-data-visualization-matplotlib-light/sections/section-1-purpose-of-visualization/exercises/exercise-1.py
+      - Section 2 Notes: chapter-8-data-visualization-matplotlib-light/sections/section-2-basic-plot-types/notes.md
+      - Section 2 Exercise 1: chapter-8-data-visualization-matplotlib-light/sections/section-2-basic-plot-types/exercises/exercise-1.py
+      - Section 3 Notes: chapter-8-data-visualization-matplotlib-light/sections/section-3-plotting-from-dataframes/notes.md
+      - Section 3 Exercise 1: chapter-8-data-visualization-matplotlib-light/sections/section-3-plotting-from-dataframes/exercises/exercise-1.py
+      - Section 4 Notes: chapter-8-data-visualization-matplotlib-light/sections/section-4-interpreting-results/notes.md
+      - Section 4 Exercise 1: chapter-8-data-visualization-matplotlib-light/sections/section-4-interpreting-results/exercises/exercise-1.py
+  - Chapter 9:
+      - Learning Outcomes: chapter-9-querying-data-with-sql-conceptual-bridge/learning-outcomes.md
+      - Learning Objectives: chapter-9-querying-data-with-sql-conceptual-bridge/learning-objectives.md
+      - Concepts: chapter-9-querying-data-with-sql-conceptual-bridge/concepts.md
+      - Section 1 Notes: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-1-relational-data-model-refresher/notes.md
+      - Section 1 Exercise 1: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-1-relational-data-model-refresher/exercises/exercise-1.py
+      - Section 2 Notes: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-2-core-queries-select-where/notes.md
+      - Section 2 Exercise 1: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-2-core-queries-select-where/exercises/exercise-1.py
+      - Section 3 Notes: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-3-combining-data-join/notes.md
+      - Section 3 Exercise 1: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-3-combining-data-join/exercises/exercise-1.py
+      - Section 4 Notes: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-4-mapping-sql-to-python-pandas/notes.md
+      - Section 4 Exercise 1: chapter-9-querying-data-with-sql-conceptual-bridge/sections/section-4-mapping-sql-to-python-pandas/exercises/exercise-1.py
+  - Chapter 10:
+      - Learning Outcomes: chapter-10-http-data-exposure-with-flask/learning-outcomes.md
+      - Learning Objectives: chapter-10-http-data-exposure-with-flask/learning-objectives.md
+      - Concepts: chapter-10-http-data-exposure-with-flask/concepts.md
+      - Section 1 Notes: chapter-10-http-data-exposure-with-flask/sections/section-1-what-a-web-app-is/notes.md
+      - Section 1 Exercise 1: chapter-10-http-data-exposure-with-flask/sections/section-1-what-a-web-app-is/exercises/exercise-1.py
+      - Section 2 Notes: chapter-10-http-data-exposure-with-flask/sections/section-2-request-handling-with-minimal-flask-routes/notes.md
+      - Section 2 Exercise 1: chapter-10-http-data-exposure-with-flask/sections/section-2-request-handling-with-minimal-flask-routes/exercises/exercise-1.py
+      - Section 3 Notes: chapter-10-http-data-exposure-with-flask/sections/section-3-templates-and-server-side-rendering-basics/notes.md
+      - Section 3 Exercise 1: chapter-10-http-data-exposure-with-flask/sections/section-3-templates-and-server-side-rendering-basics/exercises/exercise-1.py
+      - Section 4 Notes: chapter-10-http-data-exposure-with-flask/sections/section-4-sql-to-html-pipeline/notes.md
+      - Section 4 Exercise 1: chapter-10-http-data-exposure-with-flask/sections/section-4-sql-to-html-pipeline/exercises/exercise-1.py
+  - Chapter 11:
+      - Learning Outcomes: chapter-11-object-oriented-programming-deep-dive/learning-outcomes.md
+      - Learning Objectives: chapter-11-object-oriented-programming-deep-dive/learning-objectives.md
+      - Concepts: chapter-11-object-oriented-programming-deep-dive/concepts.md
+      - Section 1 Notes: chapter-11-object-oriented-programming-deep-dive/sections/section-1-why-oop-exists/notes.md
+      - Section 1 Exercise 1: chapter-11-object-oriented-programming-deep-dive/sections/section-1-why-oop-exists/exercises/exercise-1.py
+      - Section 1 Exercise 2: chapter-11-object-oriented-programming-deep-dive/sections/section-1-why-oop-exists/exercises/exercise-2.py
+      - Section 2 Notes: chapter-11-object-oriented-programming-deep-dive/sections/section-2-classes-and-objects/notes.md
+      - Section 2 Exercise 1: chapter-11-object-oriented-programming-deep-dive/sections/section-2-classes-and-objects/exercises/exercise-1.py
+      - Section 2 Exercise 2: chapter-11-object-oriented-programming-deep-dive/sections/section-2-classes-and-objects/exercises/exercise-2.py
+      - Section 3 Notes: chapter-11-object-oriented-programming-deep-dive/sections/section-3-attributes-and-methods/notes.md
+      - Section 3 Exercise 1: chapter-11-object-oriented-programming-deep-dive/sections/section-3-attributes-and-methods/exercises/exercise-1.py
+      - Section 3 Exercise 2: chapter-11-object-oriented-programming-deep-dive/sections/section-3-attributes-and-methods/exercises/exercise-2.py
+      - Section 4 Notes: chapter-11-object-oriented-programming-deep-dive/sections/section-4-modeling-data-with-classes/notes.md
+      - Section 4 Exercise 1: chapter-11-object-oriented-programming-deep-dive/sections/section-4-modeling-data-with-classes/exercises/exercise-1.py
+      - Section 4 Exercise 2: chapter-11-object-oriented-programming-deep-dive/sections/section-4-modeling-data-with-classes/exercises/exercise-2.py
+  - Chapter 12 (Django Part 1):
+      - Learning Outcomes: chapter-12-orm-bridging-python-and-databases/learning-outcomes.md
+      - Learning Objectives: chapter-12-orm-bridging-python-and-databases/learning-objectives.md
+      - Concepts: chapter-12-orm-bridging-python-and-databases/concepts.md
+      - Starter Project: chapter-12-orm-bridging-python-and-databases/starter-project/README.md
+      - Section 1 Notes: chapter-12-orm-bridging-python-and-databases/sections/section-1-the-problem-orm-solves/notes.md
+      - Section 2 Notes: chapter-12-orm-bridging-python-and-databases/sections/section-2-core-orm-concepts/notes.md
+      - Section 3 Notes: chapter-12-orm-bridging-python-and-databases/sections/section-3-querying-with-orm/notes.md
+      - Section 4 Notes: chapter-12-orm-bridging-python-and-databases/sections/section-4-crud-operations/notes.md
+  - Chapter 13 (Django Part 2):
+      - Learning Outcomes: chapter-13-django-integrated-data-systems/learning-outcomes.md
+      - Learning Objectives: chapter-13-django-integrated-data-systems/learning-objectives.md
+      - Concepts: chapter-13-django-integrated-data-systems/concepts.md
+      - Starter Project: chapter-13-django-integrated-data-systems/starter-project/README.md
+      - Section 1 Notes: chapter-13-django-integrated-data-systems/sections/section-1-django-as-a-framework/notes.md
+      - Section 2 Notes: chapter-13-django-integrated-data-systems/sections/section-2-models-and-the-orm/notes.md
+      - Section 3 Notes: chapter-13-django-integrated-data-systems/sections/section-3-views-and-data-exposure/notes.md
+      - Section 4 Notes: chapter-13-django-integrated-data-systems/sections/section-4-admin-interface-productivity/notes.md
