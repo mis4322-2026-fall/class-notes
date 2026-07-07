@@ -1,0 +1,18 @@
+{
+  "latitude": 37.77,
+  "longitude": -122.41,
+  "generationtime_ms": 1.2,
+  "utc_offset_seconds": -25200,
+  "timezone": "America/Los_Angeles",
+  "timezone_abbreviation": "PDT",
+  "elevation": 52.0,
+  "current": {
+    "time": "2024-04-11T14:30",
+    "interval": 900,
+    "temperature_2m": 18.5,
+    "relative_humidity_2m": 65,
+    "weather_code": 80,
+    "is_day": 1,
+    "wind_speed_10m": 12.3
+  }
+}

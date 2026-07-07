@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Overview</title>
+  </head>
+  <body>
+    <h1>Project Overview</h1>
+    <p>Total projects: {{ summary.total_projects }}</p>
+    <p>At-risk projects: {{ summary.at_risk_projects }}</p>
+
+    <ul>
+      {% for project in projects %}
+      <li>{{ project.name }} | {{ project.owner }} | {{ project.status }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+order_id,region,units,price,status
+2001,North,5,210.0,Closed
+2002,West,3,180.0,Closed
+2003,North,,190.0,Pending
+2004,South,4,,Closed
+2005,West,6,175.0,Closed

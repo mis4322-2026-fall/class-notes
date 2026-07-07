@@ -1,0 +1,23 @@
+{
+  "id": 1001,
+  "name": "John Martinez",
+  "email": "john.martinez@company.com",
+  "total_purchases": 2500.50,
+  "orders": [
+    {
+      "order_id": 5001,
+      "date": "2024-01-15",
+      "amount": 500.00
+    },
+    {
+      "order_id": 5002,
+      "date": "2024-02-20",
+      "amount": 1200.00
+    },
+    {
+      "order_id": 5003,
+      "date": "2024-03-10",
+      "amount": 800.50
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Report</title>
+  </head>
+  <body>
+    <h1>Project Report</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Department</th>
+          <th>Budget</th>
+          <th>Task Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for record in records %}
+        <tr>
+          <td>{{ record.project_name }}</td>
+          <td>{{ record.department }}</td>
+          <td>{{ record.budget }}</td>
+          <td>{{ record.task_count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
