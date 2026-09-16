@@ -95,6 +95,8 @@ print(region_a == region_b)  # True
 
 > Python uses `strip()`, not `trim()`.
 
+> **Try it:** Complete [Exercise 1](#exercise-1-clean-and-format-a-customer-name) at the bottom of these notes.
+
 ## 2. Keep matching records: comprehension vs. `filter`
 
 ### Conditional list comprehension
@@ -148,6 +150,8 @@ print(complete_a == complete_c)                     # True
 - `filter` returns an iterator; `list(...)` converts it into a list.
 - None of these approaches changes `orders`.
 
+> **Try it:** Complete [Exercise 2](#exercise-2-filter-orders) at the bottom of these notes.
+
 ## 3. Transform every record: comprehension vs. `map`
 
 ### Transforming list comprehension
@@ -198,6 +202,8 @@ print(revenue_a == revenue_c)  # True
 - A comprehension returns a list immediately.
 - `map` returns an iterator.
 - A named function is useful when the business rule deserves a name or tests.
+
+> **Try it:** Complete [Exercise 3](#exercise-3-calculate-revenue) at the bottom of these notes.
 
 ## 4. Sort a list of integers
 
@@ -257,6 +263,8 @@ print(scores)             # [82, 95, 71, 88] — original unchanged
 - `sorted()` accepts any iterable and returns a new list.
 - Both support `key=` and `reverse=`.
 
+> **Try it:** Complete [Exercise 4](#exercise-4-rank-scores-without-changing-the-original) at the bottom of these notes.
+
 ## 5. Sort strings
 
 ### Default ordering
@@ -283,6 +291,8 @@ print(regions)           # source remains unchanged
 ```
 
 The `key` function produces a temporary comparison value. It does not replace the original item in the result.
+
+> **Try it:** Reuse this idea in [Exercise 5](#exercise-5-sort-customer-names) at the bottom of these notes.
 
 ## 6. Sort a list of dictionaries
 
@@ -375,6 +385,8 @@ print([product["name"] for product in ranked_b])  # ["Monitor", "Keyboard", "Mou
 print(ranked_a == ranked_b)                       # True
 ```
 
+> **Try it:** Complete [Exercise 6](#exercise-6-rank-products-by-margin) at the bottom of these notes.
+
 ## 7. Combine filtering, transformation, and sorting
 
 ### Step-by-step pipeline
@@ -435,6 +447,8 @@ print(compact_report == report)  # True
 
 Both versions produce the same result. The step-by-step version exposes the output of every pipeline stage, making it easier to explain and debug. The compact version removes intermediate names but contains more ideas in one expression.
 
+> **Try it:** Complete [Exercise 7](#exercise-7-build-a-regional-revenue-report) at the bottom of these notes.
+
 ## 8. Summary
 
 | Task | Approach A | Approach B | Central distinction |
@@ -447,3 +461,191 @@ Both versions produce the same result. The step-by-step version exposes the outp
 | Build a pipeline | Intermediate variables | Nested expression | Traceability vs. compactness |
 
 The question is not only, “Which approach works?” Ask which approach makes the intent, effects, and resulting data easiest to understand.
+
+## 9. Exercises
+
+Use the `orders` and `products` data from [Section 0](#0-sample-data). The exercises build from one string operation to a complete data-processing pipeline. Try each problem before opening its solution.
+
+### Exercise 1: Clean and format a customer name
+
+Given this value:
+
+```python
+customer = "  Baylor Books  "
+```
+
+Create `display_name` with the value `"Baylor Books"`. Do not change `customer`. Print both variables to confirm the original string is unchanged.
+
+### Exercise 2: Filter orders
+
+Create a list named `active_orders` containing every order whose status is not `"cancelled"`.
+
+Print the order IDs. The expected IDs are:
+
+```text
+[1001, 1002, 1003]
+```
+
+### Exercise 3: Calculate revenue
+
+Transform `active_orders` into a list named `active_revenues`. Each item should be the order's quantity multiplied by its unit price.
+
+Expected result:
+
+```text
+[37.5, 50.0, 40.0]
+```
+
+### Exercise 4: Rank scores without changing the original
+
+Given this list:
+
+```python
+scores = [78, 92, 85, 92, 69]
+```
+
+Create a new list named `ranked_scores` ordered from highest to lowest. The original `scores` list must remain unchanged.
+
+### Exercise 5: Sort customer names
+
+Create a list containing the cleaned customer name from every order, sorted alphabetically without regard to capitalization. Do not change `orders`.
+
+Expected result:
+
+```text
+["Acme Coffee", "Baylor Books", "Cameron Catering", "Dr Pepper Museum"]
+```
+
+### Exercise 6: Rank products by margin
+
+Gross margin is `price - cost`. Sort `products` from highest to lowest margin. Then print each product's name and margin.
+
+Expected output:
+
+```text
+Monitor 70.0
+Keyboard 30.0
+Mouse 23.0
+```
+
+### Exercise 7: Build a regional revenue report
+
+Build a report from `orders` that does all of the following:
+
+1. Keeps only orders whose status is `"complete"`.
+2. Creates a new dictionary for each matching order with `customer`, `region`, and `revenue`.
+3. Removes extra whitespace from each customer name.
+4. Sorts the report by region alphabetically, then by revenue from highest to lowest within the same region.
+5. Leaves the original `orders` list unchanged.
+
+For the sample data, the expected result is:
+
+```python
+[
+    {"customer": "Cameron Catering", "region": "North", "revenue": 40.0},
+    {"customer": "Acme Coffee", "region": "North", "revenue": 37.5},
+]
+```
+
+## 10. Solutions
+
+### Solution 1
+
+```python
+customer = "  Baylor Books  "
+
+display_name = customer.strip()
+
+print(customer)      # "  Baylor Books  "
+print(display_name)  # "Baylor Books"
+```
+
+Strings are immutable, so `strip()` returns a new string without changing `customer`.
+
+### Solution 2
+
+```python
+active_orders = [
+    order
+    for order in orders
+    if order["status"] != "cancelled"
+]
+
+print([order["order_id"] for order in active_orders])
+# [1001, 1002, 1003]
+```
+
+### Solution 3
+
+```python
+active_revenues = [
+    order["qty"] * order["unit_price"]
+    for order in active_orders
+]
+
+print(active_revenues)  # [37.5, 50.0, 40.0]
+```
+
+This solution assumes Exercise 2 has already created `active_orders`.
+
+### Solution 4
+
+```python
+scores = [78, 92, 85, 92, 69]
+
+ranked_scores = sorted(scores, reverse=True)
+
+print(ranked_scores)  # [92, 92, 85, 78, 69]
+print(scores)         # [78, 92, 85, 92, 69]
+```
+
+Using `sorted()` creates a new list, so `scores` remains unchanged.
+
+### Solution 5
+
+```python
+customer_names = sorted(
+    [order["customer"].strip() for order in orders],
+    key=str.lower,
+)
+
+print(customer_names)
+# ["Acme Coffee", "Baylor Books", "Cameron Catering", "Dr Pepper Museum"]
+```
+
+### Solution 6
+
+```python
+products_by_margin = sorted(
+    products,
+    key=lambda product: product["price"] - product["cost"],
+    reverse=True,
+)
+
+for product in products_by_margin:
+    product_margin = product["price"] - product["cost"]
+    print(product["name"], product_margin)
+```
+
+### Solution 7
+
+```python
+regional_report = [
+    {
+        "customer": order["customer"].strip(),
+        "region": order["region"],
+        "revenue": order["qty"] * order["unit_price"],
+    }
+    for order in orders
+    if order["status"] == "complete"
+]
+
+regional_report = sorted(
+    regional_report,
+    key=lambda row: (row["region"], -row["revenue"]),
+)
+
+print(regional_report)
+```
+
+The tuple key sorts regions in ascending order. Negating revenue makes larger revenue values come first within each region.
